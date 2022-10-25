@@ -5,7 +5,8 @@ const styles = {
     background: 'blue',
     justifyContent: 'flex-end',
     color: 'white',
-    padding: 20
+    padding: 20,
+  margin: 20,
   },
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+// import App from '../App';
 
 // We declare an object called styles that will contain a few objects for card and heading styles
 // Notice that each key lists CSS styles in camel case
@@ -17,11 +18,13 @@ const styles = {
   },
 };
 
-// In Navbar, we can assign a style from an object by using curly braces
+// TODO: move functional links into navbar component
 function Navbar() {
   return (
     <div style={styles.card}>
-      <div style={styles.heading}>Home</div>
+      <div style={styles.heading}>
+        {/* <App /> */}
+        </div>
     </div>
   );
 }
