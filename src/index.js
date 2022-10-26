@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import NavBar from './components/Navigation';
 // import Header from './components/Header';
 
+// TODO: remove navBar and footer and nest within app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

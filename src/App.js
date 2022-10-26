@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Portfolio from './components/pages/Portfolio';
-import Resume from './components/pages/Resume';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
 function renderPortfolio(currentPage) {
   if (currentPage === 'About') {

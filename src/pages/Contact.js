@@ -16,9 +16,12 @@ const Contact = () => {
           <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
           </div>
           <div className="mb-3">
-          <label for="exampleFormControlTextarea1" className="form-label" >Comments</label>
+          <label for="exampleFormControlTextarea1" className="form-label" >Message</label>
           <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
+        <div class="col-auto">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
       </form>
     </div>
   )
