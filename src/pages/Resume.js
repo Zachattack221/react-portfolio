@@ -4,8 +4,9 @@ const Resume = () => {
   return (
     <div className='container'>
     <h1>Resume</h1>
-    {/* TODO: refresh on link setup, direct to target_blank? */}
-  {/* <Link></Link> */}
+<a href="https://docs.google.com/document/d/1LsOZH-E05oR4aRa5hc93zLmJ8iNOKtEQpXd3K6VGCTI/edit?usp=sharing">
+  View Full Resume Here!
+</a>
   Technical Proficiencies:
   <p>
     <ul>

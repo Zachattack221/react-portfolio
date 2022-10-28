@@ -20,7 +20,7 @@ const Portfolio = () => {
         </div>
         <div className="card mb-3" style={{maxWidth: "540"}}>
           <div className="row g-0">
-            <div class="col-md-4">
+            <div className="col-md-4">
               <img src="..." className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-8">
