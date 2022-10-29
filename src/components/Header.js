@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
-
+import Navbar from './Navigation';
 
 
 const styles = {
@@ -15,7 +15,7 @@ const styles = {
 function Header() {
   return (
     <header style={styles.header} className="header">
-      <h1 style={styles.h1}>Home</h1>
+      <h1 style={styles.h1}><Navbar /></h1>
     </header>
   );
 }

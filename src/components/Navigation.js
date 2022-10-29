@@ -19,11 +19,11 @@ const styles = {
 };
 
 // TODO: move functional links into navbar component
-function Navbar() {
+function Navbar({ currentPage, setCurrentPage}) {
   return (
     <div style={styles.card}>
       <div style={styles.heading}>
-        {/* <App /> */}
+        <{/* <App /> */}>
         </div>
     </div>
   );

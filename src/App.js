@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
+
 function renderPortfolio(currentPage) {
   if (currentPage === 'About') {
     return <About />
