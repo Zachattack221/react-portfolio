@@ -8,7 +8,7 @@ const styles = {
     backgroundColor: 'black',
   },
   h1: {
-    fontSize: 10
+    fontSize: 30
 ,
     color: 'white',
   }
@@ -32,7 +32,10 @@ const styles = {
 function Header() {
   return (
     <header style={styles.header} className="header">
-      <h1 style={styles.h1}><Navbar /></h1>
+      <h1 style={styles.h1}>
+        <Navbar />
+        Test text
+        </h1>
     </header>
   );
 }

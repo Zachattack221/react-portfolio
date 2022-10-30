@@ -1,30 +1,43 @@
 import React from 'react';
+export default function NavBar([currentPage, setCurrentPage]) {
 
-function NavBar () {
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+  const styles = {
+    nav: {
+      margin: 20,
+      background: '#e8eaf6',
+    },
+    a: {
+      background: '#9a74db',
+      fontSize: '1.2rem',
+      color: 'white',
+
+    },
+  }
+
+  return (
+    <nav style={styles.nav} className="container-fluid">
+      <ul className="nav nav-tabs d-flex justify-content-evenly">
+        <li className='nav-item'>
+          <a style={styles.a} onClick={() => { setCurrentPage('About') }} className={currentPage == "About" ? "nav-link active" : "nav-link"}>
+            <h3>About</h3>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+        <li className="nav-item">
+          <a style={styles.a} onClick={() => { setCurrentPage('Contact') }} className={currentPage == "Contact" ? "nav-link active" : "nav-link"}>
+            <h3>Contact</h3>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+        <li className="nav-item">
+          <a style={styles.a} onClick={() => { setCurrentPage('Portfolio') }} className={currentPage == "Portfolio" ? "nav-link active" : "nav-link"}>
+            <h3>Portfolio</h3>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+        <li className="nav-item">
+          <a style={styles.a} onClick={() => { setCurrentPage('Resume') }} className={currentPage == "Resume" ? "nav-link active" : "nav-link"}>
+            <h3>Resume</h3>
+          </a>
         </li>
       </ul>
-    </div>
-  </div>
-</nav>
+    </nav>
+  )
 };
-
-export default NavBar;

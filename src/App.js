@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,29 +22,29 @@ function renderPortfolio(currentPage) {
     return <Resume />
   }
 };
-
+// Moved navbar functionality into Navigation page to be reused in header component 
 function App() {
-  const [currentPage, setCurrentPage] = useState('About');
-  return (
-    <div>
-      <nav>
-        <a onClick={() => setCurrentPage('About')}>
-          About
-        </a>
-        <a onClick={() => setCurrentPage('Contact')}>
-          Contact
-        </a>
-        <a onClick={() => setCurrentPage('Portfolio')}>
-          Portfolio
-        </a>
-        <a onClick={() => setCurrentPage('Resume')}>
-          Resume
-        </a>
-      </nav>
-      {renderPortfolio(currentPage)}
-    </div>
-  )
-}
+//   const [currentPage, setCurrentPage] = useState('About');
+//   return (
+//     <div>
+//       <nav>
+//         <a onClick={() => setCurrentPage('About')}>
+//           About
+//         </a>
+//         <a onClick={() => setCurrentPage('Contact')}>
+//           Contact
+//         </a>
+//         <a onClick={() => setCurrentPage('Portfolio')}>
+//           Portfolio
+//         </a>
+//         <a onClick={() => setCurrentPage('Resume')}>
+//           Resume
+//         </a>
+//       </nav>
+//       {renderPortfolio(currentPage)}
+//     </div>
+//   )
+// }
 
 
 export default App;
