@@ -4,7 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
-import NavBar from './Navigation';
+import NavBar from './Navbar';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -13,19 +13,19 @@ export default function ProjectPage() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
-  const renderPage () => {
+  const renderPage = () => {
     switch (currentPage) {
-      case "About"
+      case "About":
         return <About />;
-      case "Contact"
+      case "Contact":
         return <Contact />;
-      case "Portfolio"
+      case "Portfolio":
         return <Portfolio />;
-      case "Resume"
+      case "Resume":
         return <Resume />;
     }
   }
-  
+
   const styles = {
     div: {
       height: '100vh',
@@ -33,13 +33,19 @@ export default function ProjectPage() {
       flexDirection: 'column'
     }
   }
-  
+
   return (
     <div>
-      <header>
-        
-      </header>
+      <Header />
+      <div>
+        <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
+      </div>
+      <div style={{ styles.div }}>
+        {renderPage()}
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
-  
-    )
-}
+  );
+};

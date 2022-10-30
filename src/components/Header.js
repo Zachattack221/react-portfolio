@@ -1,26 +1,25 @@
 import React from 'react';
 // import '../styles/Header.css';
-import Navbar from './Navigation';
+// import Navbar from './Navigation';
 
 
 export default function Header() {
   const styles = {
     header: {
       backgroundColor: 'black',
+      padding: '25px'
     },
     h1: {
-      fontSize: 30
-  ,
+      fontSize: 30,
       color: 'white',
     }
   }
 
   return (
-    <header style={styles.header} className="header">
+    <div style={styles.header} className="header">
       <h1 style={styles.h1}>
-        <Navbar />
         Test text
         </h1>
-    </header>
+    </div>
   );
 };

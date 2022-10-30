@@ -1,5 +1,5 @@
 import React from 'react';
-export default function NavBar([currentPage, setCurrentPage]) {
+export default function NavBar({currentPage, handlePageChange}) {
 
   const styles = {
     nav: {
@@ -16,7 +16,7 @@ export default function NavBar([currentPage, setCurrentPage]) {
   return (
     <nav style={styles.nav} className="container-fluid">
       <ul className="nav nav-tabs d-flex justify-content-evenly">
-        <li className='nav-item'>
+        <li className="nav-item">
           <a style={styles.a} onClick={() => { handlePageChange('About') }} className={currentPage == "About" ? "nav-link active" : "nav-link"}>
             <h3>About</h3>
           </a>
