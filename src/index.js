@@ -7,14 +7,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
-import NavBar from './components/Navigation';
-// import Header from './components/Header';
+// import NavBar from './components/Navigation';
+import Header from './components/Header';
 
 // TODO: remove navBar and footer and nest within app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar />
+    <Header />
     <App />
     <Footer />
   </React.StrictMode>
