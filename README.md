@@ -20,6 +20,7 @@ Run 'npm i' within the console, located at the root level of the directory. This
 Once necessary dependencies are installed, run "npm run build" to build out website, followed by "npm run start" to initialize react app running.
 
 ## Visuals
+
 Contact
 ![Contact](/src/images/Contact.png)
 
