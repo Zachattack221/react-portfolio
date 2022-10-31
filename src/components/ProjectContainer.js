@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
+import Portfolio from '../pages/Portfolio';
+import Resume from '../pages/Resume';
 import NavBar from './Navbar';
 import Header from './Header';
 import Footer from './Footer';
@@ -30,22 +30,16 @@ export default function ProjectPage() {
     div: {
       height: '100vh',
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      
     }
   }
 
   return (
-    <div>
-      <Header />
-      <div>
+    <div style={ styles.div }>
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-      </div>
-      <div style={{ styles.div }}>
         {renderPage()}
-      </div>
-      <div>
         <Footer />
-      </div>
     </div>
   );
 };

@@ -9,22 +9,20 @@ import { IconContext } from "react-icons";
 
 const styles = {
   footer: {
-    background: 'purple',
-    // display: 'flex',
-    justifyContent: 'flex-end',
+    background: 'grey',
+    display: 'flex',
+    justifyContent: 'space-around',
     color: 'navy',
-    padding: 40,
+    padding: 20,
     margin: 10,
   },
 };
 
 export default function Footer() {
   return (
-    <div style={styles.footer} className="footer container-fluid mt-auto py-1 text-center">
+    <div style={styles.footer} className="footer container-fluid mt-auto py-1 ">
       <div className="row">
-        <div className="col-md-6">
-          <h3>Designed & Created by Zach van Dijk &copy; 2022 ZvD</h3>
-        </div>
+          <h3 className="col-md-6">Designed & Created by Zach van Dijk &copy; 2022 ZvD</h3>
         <div className="col-md-6">
           <a href="https://github.com/Zachattack221" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{ color: 'navy', size: 82 }}>
             <AiFillGithub />

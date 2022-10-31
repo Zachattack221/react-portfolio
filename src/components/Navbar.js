@@ -4,12 +4,12 @@ export default function NavBar({currentPage, handlePageChange}) {
   const styles = {
     nav: {
       margin: 20,
-      background: '#e8eaf6',
+      background: 'white',
     },
     a: {
-      background: '#9a74db',
+      background: 'grey',
       fontSize: '1.2rem',
-      color: 'white',
+      color: 'navy',
     },
   }
 
