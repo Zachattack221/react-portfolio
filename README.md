@@ -5,7 +5,7 @@
 2. [Tech Use](#tech-use)
 3. [Installation](#installation)
 4. [Visuals](#visuals)
-5. [License](#license)
+
 
 ## Description
 This application serves to demonstrate the functionality of React as a platform for single-page web applications, centered around state management. 
@@ -30,5 +30,3 @@ Portfolio
 Resume
 ![Contact](/src/images/Resume.png)
 
-## License
-This application is licensed with the MIT License.
