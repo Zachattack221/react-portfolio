@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.c59cc657.css",
+    "main.js": "/react-portfolio/static/js/main.29069c03.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/homepage_featured_monsters.png": "/react-portfolio/static/media/homepage_featured_monsters.197a87b13bb532677338.png",
+    "static/media/More_Than_Music.png": "/react-portfolio/static/media/More_Than_Music.1e5e6cdfb7d45ba99bca.png",
+    "static/media/ProfilePicture.JPG": "/react-portfolio/static/media/ProfilePicture.34ae9bd3002b2d846198.JPG",
+    "static/media/Freestanding.png": "/react-portfolio/static/media/Freestanding.6c0f0963b78120754fc0.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.c59cc657.css.map": "/react-portfolio/static/css/main.c59cc657.css.map",
+    "main.29069c03.js.map": "/react-portfolio/static/js/main.29069c03.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59cc657.css",
+    "static/js/main.29069c03.js"
+  ]
+}
